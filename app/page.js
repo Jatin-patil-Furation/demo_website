@@ -41,13 +41,16 @@ export default function Home() {
           </section>
 
           <section
-            id="technologiesSection"
+            id="techStack"
             className="min-h-[90vh] flex justify-center items-center py-0 md:py-10 w-full text-white "
           >
             <TechnologiesSection />
           </section>
 
-          <section className="min-h-[100vh] pt-20 md:py-10 w-full text-white lg:mt-[100px] ">
+          <section
+            id="solutions"
+            className="min-h-[100vh] pt-20 md:py-10 w-full text-white lg:mt-[100px] "
+          >
             <SolutionsSection />
           </section>
 
@@ -102,13 +105,12 @@ export default function Home() {
           <FooterNew />
         </footer>
 
-        <CookiePopup/>
+        <CookiePopup />
       </div>
 
       <div className="">
         <KnowMoreCard />
       </div>
-      
     </>
   );
 }

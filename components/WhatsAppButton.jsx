@@ -108,7 +108,7 @@ const WhatsAppButton = () => {
       </div>
       {isPopupOpen && (
         <div ref={ref}>
-          <ContactsPopup />
+          <ContactsPopup setIsPopupOpen={setIsPopupOpen} />
         </div>
       )}
     </>

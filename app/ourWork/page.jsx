@@ -271,7 +271,7 @@ const Page = () => {
                 className={`mt-${data.marginTop} basis-[27%] bg-[#111111] rounded-lg p-8 space-y-5`}
               >
                 <div className="text-gray-400 text-2xl ">
-                  <span className="text-primary border border-[#111111] border-b-primary  py-3">
+                  <span className="text-primary border border-[#111111] border-b-primary leading-5  py-1">
                     {data?.head}{" "}
                   </span>
                   Stage
