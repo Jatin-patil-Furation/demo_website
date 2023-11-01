@@ -1,0 +1,21 @@
+name: PR
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Deploy S3 Website
+        uses: ./.github/actions/s3-website-pr-action
+        with:
+          bucket-prefix: ${{ secrets.PR_BUCKET_PREFIX }}
+          folder-to-copy: "./"
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.PR_AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.PR_AWS_SECRET_ACCESS_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

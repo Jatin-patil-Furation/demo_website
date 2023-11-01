@@ -1,0 +1,8 @@
+.gradient_border {
+  border: double 1px transparent;
+  border-radius: 15px;
+  background-image: linear-gradient(black, black),
+    linear-gradient(to bottom, rgb(113, 113, 113), #ef3239);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}

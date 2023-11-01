@@ -1,0 +1,40 @@
+
+.inner
+{ 
+    margin: auto;
+    background: rgb(2,0,36);
+    background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(169 169 176 / 41%) 9%, rgb(222 222 242 / 38%) 17%, rgb(255 255 255 / 41%) 29%, rgb(249 249 251 / 41%) 41%, rgb(241 242 247 / 49%) 51%, rgb(247 249 251 / 46%) 85%, rgba(48,49,49,1) 97%);
+}
+
+
+.sider
+{
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgb(169 169 176 / 63%) 20%, rgb(222 222 242 / 47%) 23%, rgb(255 255 255 / 46%) 29%, rgb(249 249 251 / 51%) 41%, rgb(241 242 247 / 52%) 51%, rgb(247 249 251 / 43%) 75%, rgba(48,49,49,1) 97%);
+}
+
+@media only screen and (max-width: 780px)
+{
+    .inner
+    {
+        display:none;
+    }  
+    .sider
+{
+   display:none
+}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

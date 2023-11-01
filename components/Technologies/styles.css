@@ -1,0 +1,32 @@
+.swiper-wrapper {
+  height: 600px;
+}
+/* .swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+    background: #EF3239;
+} */
+.swiper-slide {
+  height: 100% !important;
+}
+
+.swiper-pagination {
+  position: unset;
+}
+
+.swiper-pagination-bullet {
+  background-color: #858585; /* Change this to your desired bullet color */
+}
+
+.swiper-slide-active {
+  height: 100% !important;
+}
+
+.swiper-autoheight {
+  height: 100% !important;
+}
+.box-shadow {
+  box-shadow: inset 0 0 2000px rgb(152 152 152 / 53%);
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #EF3239; /* Change this to your desired color */
+}

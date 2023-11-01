@@ -1,0 +1,20 @@
+name: PR - Closed
+
+on:
+  pull_request:
+    branches: [main]
+    types: [ closed ]
+
+jobs:
+  deploy:
+    name: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete Website Bucket
+        uses: ./.github/actions/s3-website-pr-action
+        with:
+          bucket-prefix: ${{ secrets.PR_BUCKET_PREFIX }}
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.PR_AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.PR_AWS_SECRET_ACCESS_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

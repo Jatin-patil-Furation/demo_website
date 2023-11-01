@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>icons8-linkedin</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons8-linkedin" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M37,0 L5,0 C2.24,0 0,2.24 0,5 L0,37 C0,39.76 2.24,42 5,42 L37,42 C39.76,42 42,39.76 42,37 L42,5 C42,2.24 39.76,0 37,0 Z M13,16 L13,35 L7,35 L7,16 L13,16 Z M7,10.47 C7,9.07 8.2,8 10,8 C11.8,8 12.93,9.07 13,10.47 C13,11.87 11.88,13 10,13 C8.2,13 7,11.87 7,10.47 Z M35,35 L29,35 C29,35 29,25.74 29,25 C29,23 28,21 25.5,20.96 L25.42,20.96 C23,20.96 22,23.02 22,25 C22,25.91 22,35 22,35 L16,35 L16,16 L22,16 L22,18.56 C22,18.56 23.93,16 27.81,16 C31.78,16 35,18.73 35,24.26 L35,35 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
