@@ -5,12 +5,12 @@ import React from "react";
 const ContactsPopup = ({ setIsPopupOpen }) => {
   return (
     <div
-      className=""
+      className="absolute top-7 right-20 w-[50%] "
       onMouseLeave={() => console.log("leave")}
 
       // onMouseLeave={setIsPopupOpen(() => false)}
     >
-      <div className="mt-10 flex gap-2 w-[50%]  px-3 py-2 shadow rounded absolute top-10 right-20 bg-white">
+      <div className=" flex gap-2   px-3 py-2 shadow rounded  bg-white">
         <div className="basis-[23%] ">
           <Image
             className=" rounded-md"

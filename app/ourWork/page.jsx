@@ -1,5 +1,5 @@
 "use client";
-
+import "../globals.css";
 import Link from "next/link";
 import React, { useEffect } from "react";
 import Image from "next/image";
@@ -117,12 +117,10 @@ const Page = () => {
           text: "Clickable Prototype",
         },
         {
-          text: " Functional & Technical",
-        },
-        {
-          text: "Specifications",
+          text: " Functional & Technical Specifications",
         },
       ],
+      color: "#e42e35",
       startAmount: 1500,
       endAmount: 5000,
     },
@@ -146,6 +144,7 @@ const Page = () => {
           text: "Documentation",
         },
       ],
+      color: "#a0141a",
       startAmount: 5000,
       endAmount: 15000,
     },
@@ -169,6 +168,7 @@ const Page = () => {
           text: "Documentation",
         },
       ],
+      color: "#e95056",
       startAmount: 15000,
       endAmount: null,
     },
@@ -176,35 +176,33 @@ const Page = () => {
   // console.log(startupData);
   return (
     <section className="text-white  ">
-      <section className="sub-section w-[90%] my-2 max-w-7xl mx-auto space-y-14">
+      <section className="sub-section w-[85%] my-2 max-w-7xl mx-auto space-y-14">
         <div className="navbar-container flex justify-between">
           <div className="left-container flex flex-col rounded-md">
-            <div className="bg-white px-2 py-1">
-              <p className=" py-1 border-white border-2 text-black font-semibold border-b-primary">
-                Startup lab
-              </p>
+            <div className="relative bg-white px-2 py-1v rounded-lg">
+              <div className=" relative py-2 border-white text-sm  uppercase border-2 text-black font-extrabold">
+                Startup <br /> lab
+                <div className="absolute left-0 bottom-[0.3rem] leading-3 bg-[#FC3D45] w-[95%] mx-auto h-[1px]"></div>
+              </div>
             </div>
             <p className="text-xs">
-              by <span className="text-primary text-base">Furation</span>
+              by <span className="text-[#DE0000] text-base font-bold" >Furation</span>
             </p>
           </div>
           <Link className="flex" href={"/"}>
             {"< Back to  "} &nbsp;
-            <span className="text-primary text-base"> Furation</span>
+            <span className="text-[#DE0000] text-base"> Furation</span>
           </Link>
         </div>
         <div className=" relative hero-container w-full  bg-no-repeat ">
           <div className="relative w-full">
             <Image
-              src={"/assets/idea.svg"}
+              src={"/assets/Bulb-Idea.svg"}
               className="w-full "
               width={500}
               height={50}
               alt="idea"
             />
-            <p className=" absolute left-72 top-28 text-6xl tracking-[-0.1em]">
-              IDEA
-            </p>
           </div>
           <div className="absolute w-[45%] left-1/2 top-10 space-y-5">
             <p>
@@ -222,12 +220,12 @@ const Page = () => {
             </p>
           </div>
         </div>
-        <div className="w-full ">
-          <h3 className="text-3xl font-extrabold text-center">
+        <div className="w-full pt-6 pb-1  ">
+          <h3 className="text-3xl font-bold  uppercase">
             Product Design & Development Partner{" "}
-            <span className="text-primary ">for Entrepreneurs</span>
+            <span className="text-primary uppercase">for Entrepreneurs</span>
           </h3>
-          <div className="my-10 space-y-4">
+          <div className="my-10 font-light text-base leading-5 space-y-4">
             <p>
               Startup Lab, an integral part of Furation, is a dedicated Product
               Development Studio designed to cater to the unique needs of
@@ -253,12 +251,12 @@ const Page = () => {
           <div className="inner w-[80%] h-[1px] "></div>
         </div>
 
-        <div className="w-full">
-          <h3 className="text-3xl font-extrabold text-center">
+        <div className="w-full pb-20">
+          <h3 className="text-5xl font-bold  text-center">
             Tailor made approach{" "}
             <span className="text-primary ">for startups</span>
           </h3>
-          <p className="text-sm text-center">
+          <p className="text-base  font-normal text-center my-4 mb-14">
             Our exclusive Startup IT Services throughout the product life cycle.
           </p>
           <div className="startup-container flex w-full justify-between my-5 ">
@@ -268,20 +266,27 @@ const Page = () => {
                 data-aos-delay={data.delay}
                 data-aos-duration="800"
                 key={data?.id}
-                className={`mt-${data.marginTop} basis-[27%] bg-[#111111] rounded-lg p-8 space-y-5`}
+                className={`mt-${data.marginTop} basis-[32%] bg-[#111111] rounded-lg p-8 space-y-7 self-start`}
               >
-                <div className="text-gray-400 text-2xl ">
-                  <span className="text-primary border border-[#111111] border-b-primary leading-5  py-1">
+                <div className="text-gray-400 text-2xl relative mb-16 ">
+                  <span className="text-[#fc3d45] text-2xl font-bold   leading-5  py-1">
                     {data?.head}{" "}
                   </span>
                   Stage
+                  <div className="w-[30%] bg-[#fc3d45] h-[1px] absolute left-0 -bottom-6"></div>
                 </div>
-                <p className="">{data?.descripation}</p>
-                <ul className="space-y-3">
+                <p className="text-base font-light leading-6">
+                  {data?.descripation}
+                </p>
+                <ul className="my-5">
                   {data?.points.map((point, index) => (
-                    <li className="flex gap-1 items-center " key={index}>
-                      <div className="bg-primary  w-4 h-4 inline-block  rounded-full"></div>
-                      <p className="inline-block">{point.trim()}</p>
+                    <li className="flex gap-5 items-center " key={index}>
+                      <div className=" flex items-center  justify-center">
+                        <div className="bg-[#fc3d45]  w-2 h-2 inline-block  rounded-full"></div>
+                      </div>
+                      <p className="inline-block ext-base font-light leading-6">
+                        {point.trim()}
+                      </p>
                     </li>
                   ))}
                 </ul>
@@ -290,20 +295,20 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="lg:w-[100%]  flex justify-center items-center h-[1px] mt-32">
+        <div className="lg:w-[100%]  flex justify-center items-center h-[1px] ">
           <div className="inner w-[80%] h-[1px] "></div>
         </div>
 
-        <div className="w-full flex">
+        <div className="w-full flex pt-16 pb-8">
           <div className="left-container basis-[48%]">
-            <div className="text-3xl w-[50%]  font-extrabold p-6   border border-primary rounded-[3.5rem] text-left">
-              <p className="w-[90%] mx-auto text-left">
+            <div className="text-3xl w-[70%]  font-extrabold p-6 px-8  border border-[#fc3d45] rounded-[4rem] text-left">
+              <p className="w-[90%] mx-auto text-left font-bold text-5xl leading-10 whitespace-nowrap">
                 Our Startup <br />{" "}
-                <span className="text-primary">Services</span>{" "}
+                <span className="text-[#fc3d45]">Services</span>{" "}
               </p>
             </div>
           </div>
-          <div className="right-container space-y-7 basis-[48%]">
+          <div className="right-container space-y-16 basis-[48%]">
             {startUp_Services.map((data) => (
               <div className="w-full flex justify-between gap-4" key={data?.id}>
                 <div className=" w-[50px]">
@@ -314,9 +319,11 @@ const Page = () => {
                     width={80}
                   />
                 </div>
-                <div>
+                <div className="space-y-5">
                   <h3 className="text-2xl font-semibold">{data?.head}</h3>
-                  <p className="text-sm text-gray-400 ">{data?.description}</p>
+                  <p className="text-base leading-5 font-extralight text-white ">
+                    {data?.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -326,11 +333,11 @@ const Page = () => {
         <div className="lg:w-[100%]  flex justify-center items-center h-[1px] mt-32">
           <div className="inner w-[80%] h-[1px] "></div>
         </div>
-        <div className="w-full space-y-7">
-          <h3 className="text-center text-3xl font-bold">
+        <div className="w-full space-y-7 pb-8">
+          <h3 className="text-center text-5xl font-bold">
             How much does it <span className="text-primary">cost?</span>
           </h3>
-          <p className="w-[80%] text-center mx-auto text-sm text-gray-400">
+          <p className="w-[90%] text-center mx-auto text-base leading-5 text-gray-400 font-light">
             In the world of startups, managing initial funds is crucial. We
             understand that when resources are limited, every investment counts.
             Our diverse range of packages is designed to cater to the unique
@@ -344,18 +351,26 @@ const Page = () => {
             {costData.map((data) => (
               <div
                 key={data?.id}
-                className="relative basis-[27%] transition  bg-primary hover:bg-[#a0141a] rounded-xl px-5 py-10 my-10"
+                className={`relative basis-[32%] transition   rounded-xl px-5 py-10 my-10 ${
+                  data?.id === 1
+                    ? " bg-[#e42e35]"
+                    : data?.id === 2
+                    ? " bg-[#a0141a]"
+                    : " bg-[#e95056]"
+                }`}
               >
-                <div className="absolute -top-5 left-6 rounded-full flex items-center border border-primary justify-center bg-black text-white text-lg w-12 h-12">
-                  <p>{data?.id}</p>
+                <div className="absolute -top-6 left-6 rounded-full flex items-center border border-primary justify-center bg-black text-white text-lg w-14 h-14">
+                  <p className="font-bold text-4xl">{data?.id}</p>
                 </div>
-                <h4 className="font-bold text-2xl">
+                <h4 className="font-extrabold text-2xl w-full">
                   {data?.head} <br />{" "}
-                  <p className="text-xl inline-block">Package</p>
+                  <span className="text-2xl font-bold inline-block">
+                    Package
+                  </span>
                 </h4>
 
-                <ul className="py-6">
-                  <p>Which Includes -</p>
+                <ul className="py-6 pb-20">
+                  <p className="fon-bold text-base">Which Includes -</p>
                   {data?.list.map((data, index) => (
                     <div key={index}>
                       <li
@@ -363,12 +378,14 @@ const Page = () => {
                         key={index}
                       >
                         <div className="bg-white  w-2 h-2 inline-block  rounded-full"></div>
-                        <p className="inline-block">{data?.text.trim()}</p>
+                        <p className="inline-block font-normal">
+                          {data?.text.trim()}
+                        </p>
                       </li>
                     </div>
                   ))}
                 </ul>
-                <div className="absolute bottom-0 w-[70%] text-2xl left-[15%] bg-black rounded-t-xl  pt-1 px-1 text-center">
+                <div className="absolute bottom-[.1rem] w-[85%] text-3xl font-bold left-[9%] bg-black rounded-t-xl  py-3 px-1 text-center">
                   {`$${data?.startAmount}  ${
                     data?.endAmount === null ? "+" : "- $" + data?.endAmount
                   }`}
@@ -376,10 +393,6 @@ const Page = () => {
               </div>
             ))}
           </div>
-        </div>
-
-        <div className="lg:w-[100%]  flex justify-center items-center h-[1px] mt-32">
-          <div className="inner w-[80%] h-[1px] "></div>
         </div>
       </section>
       <div className="w-[100vw] relative my-10">
@@ -389,10 +402,10 @@ const Page = () => {
           height={500}
           className="w-full "
         />
-        <div className="absolute left-20 top-20 font-bold text-5xl">
-          Startup <span className="text-primary block">Partnership</span>{" "}
+        <div className="absolute left-20 top-20 font-bold text-5xl leading-[56px]">
+          Startup <span className="text-[#fc3d45] block">Partnership</span>{" "}
         </div>
-        <div className="absolute right-44 top-20 w-[56%] text-2xl font-thin space-y-6">
+        <div className="absolute right-44 top-20 w-[56%] text-2xl font-extralight space-y-6">
           <p>
             As startup product development studio, we have a deep passion for
             embarking on the entrepreneurial journey, having participated in

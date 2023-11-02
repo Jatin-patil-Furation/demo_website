@@ -18,7 +18,9 @@ module.exports = {
       },
       colors: {
         primary: "#EF3239",
-        
+        card1: "#e42e35",
+        card2: "#a0141a",
+        card3: "#e95056",
       },
     },
   },
