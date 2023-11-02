@@ -1,7 +1,7 @@
 "use client";
 import "../globals.css";
 import Link from "next/link";
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import ContactUsSection from "@/components/ContactUsSection/ContactUsSection";
 import { FooterNew } from "@/components";
@@ -9,13 +9,10 @@ import Aos from "aos";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { images } from "@/public/assets";
+import StartupServicesCard from "@/components/StartupServicesCard";
 
 const Page = () => {
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    // gsap.to();
-
     Aos.init({
       anchorPlacement: "bottom-bottom",
     });
@@ -186,7 +183,10 @@ const Page = () => {
               </div>
             </div>
             <p className="text-xs">
-              by <span className="text-[#DE0000] text-base font-bold" >Furation</span>
+              by{" "}
+              <span className="text-[#DE0000] text-base font-bold">
+                Furation
+              </span>
             </p>
           </div>
           <Link className="flex" href={"/"}>
@@ -221,7 +221,7 @@ const Page = () => {
           </div>
         </div>
         <div className="w-full pt-6 pb-1  ">
-          <h3 className="text-3xl font-bold  uppercase">
+          <h3 className="text-2xl md:text-3xl font-bold  uppercase">
             Product Design & Development Partner{" "}
             <span className="text-primary uppercase">for Entrepreneurs</span>
           </h3>
@@ -251,15 +251,15 @@ const Page = () => {
           <div className="inner w-[80%] h-[1px] "></div>
         </div>
 
-        <div className="w-full pb-20">
-          <h3 className="text-5xl font-bold  text-center">
+        <div className="w-full pb-8 md:pb-20">
+          <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold  text-center">
             Tailor made approach{" "}
             <span className="text-primary ">for startups</span>
           </h3>
           <p className="text-base  font-normal text-center my-4 mb-14">
             Our exclusive Startup IT Services throughout the product life cycle.
           </p>
-          <div className="startup-container flex w-full justify-between my-5 ">
+          <div className="startup-container flex flex-col md:flex-row w-full justify-between my-5 ">
             {startupData.map((data) => (
               <div
                 data-aos="fade-up"
@@ -299,10 +299,10 @@ const Page = () => {
           <div className="inner w-[80%] h-[1px] "></div>
         </div>
 
-        <div className="w-full flex pt-16 pb-8">
+        <div className="w-full flex flex-wrap flex-col justify-center md:flex-row pt-8 pb-5 md:pt-16 md:pb-8">
           <div className="left-container basis-[48%]">
-            <div className="text-3xl w-[70%]  font-extrabold p-6 px-8  border border-[#fc3d45] rounded-[4rem] text-left">
-              <p className="w-[90%] mx-auto text-left font-bold text-5xl leading-10 whitespace-nowrap">
+            <div className="text-3xl mb-5 w-[200px] md:w-[70%]  font-extrabold p-3 md:p-6 px-8  border border-[#fc3d45] rounded-[4rem] text-left">
+              <p className="w-[90%] mx-auto text-left font-bold text-2xl md:text-3xl lg:text-5xl leading-10 whitespace-nowrap">
                 Our Startup <br />{" "}
                 <span className="text-[#fc3d45]">Services</span>{" "}
               </p>
@@ -310,22 +310,7 @@ const Page = () => {
           </div>
           <div className="right-container space-y-16 basis-[48%]">
             {startUp_Services.map((data) => (
-              <div className="w-full flex justify-between gap-4" key={data?.id}>
-                <div className=" w-[50px]">
-                  <Image
-                    className="object-cover"
-                    src={images.redArrow}
-                    height={80}
-                    width={80}
-                  />
-                </div>
-                <div className="space-y-5">
-                  <h3 className="text-2xl font-semibold">{data?.head}</h3>
-                  <p className="text-base leading-5 font-extralight text-white ">
-                    {data?.description}
-                  </p>
-                </div>
-              </div>
+              <StartupServicesCard key={data?.id} data={data} />
             ))}
           </div>
         </div>
@@ -337,7 +322,7 @@ const Page = () => {
           <h3 className="text-center text-5xl font-bold">
             How much does it <span className="text-primary">cost?</span>
           </h3>
-          <p className="w-[90%] text-center mx-auto text-base leading-5 text-gray-400 font-light">
+          <p className="w-[90%] text-justify md:text-center mx-auto text-base leading-5 text-gray-400 font-light">
             In the world of startups, managing initial funds is crucial. We
             understand that when resources are limited, every investment counts.
             Our diverse range of packages is designed to cater to the unique
@@ -347,7 +332,7 @@ const Page = () => {
             package that suits your needs and budget, and let's embark on your
             entrepreneurial journey together.
           </p>
-          <div className="flex w-full text-white justify-around ">
+          <div className="flex w-full flex-col md:flex-row text-white justify-around ">
             {costData.map((data) => (
               <div
                 key={data?.id}
@@ -395,26 +380,30 @@ const Page = () => {
           </div>
         </div>
       </section>
-      <div className="w-[100vw] relative my-10">
-        <Image
-          src={"/assets/standup_lab_bg.svg"}
-          width={500}
-          height={500}
-          className="w-full "
-        />
-        <div className="absolute left-20 top-20 font-bold text-5xl leading-[56px]">
-          Startup <span className="text-[#fc3d45] block">Partnership</span>{" "}
+      <div className="w-full relative my-10">
+        <div className="h-[60vh] md:h-[50vh]">
+          <Image
+            src={"/assets/standup_lab_bg.svg"}
+            // width={500}
+            // height={500}
+            fill
+            className="w-full object-cover"
+          />
         </div>
-        <div className="absolute right-44 top-20 w-[56%] text-2xl font-extralight space-y-6">
-          <p>
+        <div className="text-center pt-3 md:pt-0 md:text-left absolute left-1/2  top-0 transform -translate-x-1/2 md:translate-x-0 md:left-20 md:top-20 font-bold text-3xl md:text-4xl lg:text-5xl leading-[30px] md:leading-[56px]">
+          Startup <br className="hidden md:block" />
+          <span className="text-[#fc3d45]">Partnership</span>
+        </div>
+        <div className="absolute w-[90%] md:w-[45%] left-1/2  top-1/4 transform -translate-x-1/2 md:translate-x-0 md:right-10 md:top-20  text-lg md:text-2xl font-extralight space-y-6">
+          <p className="text-left md:text-base lg:text-xl">
             As startup product development studio, we have a deep passion for
             embarking on the entrepreneurial journey, having participated in
             over 5+ startups alongside our clients.
           </p>
-          <p>
+          <p className="text-left md:text-base lg:text-xl">
             We're ready to invest a portion of the service fees as a
             demonstration of our dedication, sharing ownership throughout the
-            entire startup josurney.
+            entire startup journey.
           </p>
         </div>
       </div>

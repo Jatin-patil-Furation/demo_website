@@ -46,7 +46,7 @@ const ContactUsSection = () => {
           <span className="themeColor">for project discussion</span>
         </h4>
 
-        <p className="text-center text-sm md:text-base lg:text-left pr-6">
+        <p className="text-center text-sm md:text-base lg:text-left">
           Once you fill out this form, our sales representatives will contact
           you within 24 hours.
         </p>
