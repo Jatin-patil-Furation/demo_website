@@ -13,12 +13,12 @@ import React from "react";
 import "./style.css";
 import ContactUsSection from "@/components/ContactUsSection/ContactUsSection";
 // import Swiper from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Navigation, Pagination } from "swiper/modules";
+// import "swiper/css";
 import Slider from "react-slick";
 
+import "swiper/css/navigation";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -42,11 +42,19 @@ const Page = () => {
         },
       },
       {
+        breakpoint: 820, // Adjusted breakpoint for iPad Air
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+      {
         breakpoint: 768, // Tablet
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          arrows: true,
+          arrows: false,
         },
       },
       {
@@ -160,45 +168,47 @@ const Page = () => {
           />
         </div>
       </div>
-      <div className="lg:mt-24 p-20 z-0 ">
-        <div className="carousel">
+      <div className=" p-6 mt-14 lg:mt-24 lg:p-20 z-0   ">
+        <div className="carousel  ">
           <Slider {...settings}>
-            <div className=" pl-8">
+            <div className="pl-3  lg:pl-8">
               <Image
                 src={images.games}
+                // src="https://lollypop.design/wp-content/uploads/2023/06/branding.webp"
                 alt="Image 1"
                 className="w-full h-auto"
+                
               />
             </div>
-            <div className=" pl-8">
+            <div className="pl-3  lg:pl-8">
               <Image
                 src={images.club}
                 alt="Image 2"
                 className="w-full h-auto"
               />
             </div>
-            <div className=" pl-8">
+            <div className="pl-3 lg:pl-8">
               <Image
                 src={images.work}
                 alt="Image 3"
                 className="w-full h-auto"
               />
             </div>
-            <div className=" pl-8">
+            <div className="pl-3 lg:pl-8">
               <Image
                 src={images.games}
                 alt="Image 4"
                 className="w-full h-auto"
               />
             </div>
-            <div className=" pl-8">
+            <div className="pl-3 lg:pl-8">
               <Image
                 src={images.club}
                 alt="Image 5"
                 className="w-full h-auto"
               />
             </div>
-            <div className=" pl-8">
+            <div className="pl-3 lg:pl-8">
               <Image
                 src={images.work}
                 alt="Image 6"
@@ -208,7 +218,7 @@ const Page = () => {
           </Slider>
         </div>
       </div>
-      <div className="lg:w-[100%]  flex justify-center items-center h-[1px] mt-32">
+      <div className="lg:w-[100%]  flex justify-center items-center h-[1px] lg:mt-32 mt-16">
         <div className="slide w-[800px] h-[1px] "></div>
       </div>
       <div
@@ -370,7 +380,7 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className="w-[90%] m-auto">
+      <div className="w-full flex justify-center py-10">
         <ContactUsSection />
       </div>
       <FooterNew />
