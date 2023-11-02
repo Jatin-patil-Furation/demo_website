@@ -76,7 +76,7 @@ const Page = () => {
         <div className="w-[90%] m-auto">
           <div className="w-full mt-28">
             <h1 className="text-white font-[700] text-center heading-1">
-              Meet Our Team
+              Meet our Team
             </h1>
             <p className="text-[#FFFFFF] primary-para text-center">
               Our people are our greatest strength
@@ -373,7 +373,7 @@ const Page = () => {
               </div>
               <div>
                 <button className="bg-red-500 w-full text-white font-bold py-2 px-4 rounded">
-                  Red Button
+                See Open Positions
                 </button>
               </div>
             </div>
@@ -384,6 +384,7 @@ const Page = () => {
         <ContactUsSection />
       </div>
       <FooterNew />
+
     </div>
   );
 };
