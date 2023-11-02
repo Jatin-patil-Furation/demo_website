@@ -194,32 +194,64 @@ const Page = () => {
             <span className="text-[#DE0000] text-base"> Furation</span>
           </Link>
         </div>
-        <div className=" relative hero-container w-full  bg-no-repeat ">
+        <div className="hidden lg:block relative hero-container w-full  bg-no-repeat ">
           <div className="relative w-full">
             <Image
-              src={"/assets/Bulb-Idea.svg"}
+              src={"/assets/idealarge.svg"}
               className="w-full "
               width={500}
               height={50}
               alt="idea"
             />
           </div>
-          <div className="absolute w-[45%] left-1/2 top-10 space-y-5">
+          <div className="absolute w-[52%] text-base left-1/2 top-5 space-y-5">
             <p>
               At Furation, we understand that every entrepreneur experiences
               that 'Eureka' moment. Much like Archimedes' legendary run through
               the streets, these innovators have their sleepless nights and
               restless days when their ideas consume them.
+              <br />
+              <br className="hidden lg:block" /> However, the true journey for
+              entrepreneurs begins after this Eureka moment. <br />
+              We're here to support startups in navigating that journey and
+              turning their visionary concepts into reality.
+            </p>
+            <p className="font-semibold">
+              This is where Furation's Startup Lab comes in.
+            </p>
+          </div>
+        </div>
+
+        <div className="lg:hidden">
+          <div className="text-base space-y-5">
+            <p className="">
+              At Furation, we understand that every entrepreneur experiences
+              that 'Eureka' moment. Much like Archimedes' legendary run through
+              the streets, these innovators have their sleepless nights and
+              restless days when their ideas consume them.
+              <br />
               <br /> However, the true journey for entrepreneurs begins after
               this Eureka moment. <br />
               We're here to support startups in navigating that journey and
               turning their visionary concepts into reality.
             </p>
-            <p className="font-semibold">
-              This is where Furation’s Startup Lab comes in.
-            </p>
+          </div>
+          <div className="relative">
+            <Image
+              src={"/assets/ideasmall.svg"}
+              className="w-full "
+              width={500}
+              height={50}
+              alt="idea"
+            />
+            <div className="absolute top-1/2 transform -translate-y-1/2 right-0 md:right-[20%]">
+              <p className="font-semibold text-lg  md:text-xl">
+                This is where Furation's <br /> Startup Lab comes in.
+              </p>
+            </div>
           </div>
         </div>
+
         <div className="w-full pt-6 pb-1  ">
           <h3 className="text-2xl md:text-3xl font-bold  uppercase">
             Product Design & Development Partner{" "}
@@ -268,14 +300,14 @@ const Page = () => {
                 key={data?.id}
                 className={`mt-${data.marginTop} basis-[32%] bg-[#111111] rounded-lg p-8 space-y-7 self-start`}
               >
-                <div className="text-gray-400 text-2xl relative mb-16 ">
-                  <span className="text-[#fc3d45] text-2xl font-bold   leading-5  py-1">
+                <div className="text-gray-400 text-lg md:text-xl lg:text-2xl relative mb-10 md:mb-12 lg:mb-16 ">
+                  <span className="text-[#fc3d45] font-bold   leading-5  py-1">
                     {data?.head}{" "}
                   </span>
                   Stage
                   <div className="w-[30%] bg-[#fc3d45] h-[1px] absolute left-0 -bottom-6"></div>
                 </div>
-                <p className="text-base font-light leading-6">
+                <p className="text-sm md:text-sm lg:text-base font-light leading-6">
                   {data?.descripation}
                 </p>
                 <ul className="my-5">
@@ -390,7 +422,7 @@ const Page = () => {
             className="w-full object-cover"
           />
         </div>
-        <div className="text-center pt-3 md:pt-0 md:text-left absolute left-1/2  top-0 transform -translate-x-1/2 md:translate-x-0 md:left-20 md:top-20 font-bold text-3xl md:text-4xl lg:text-5xl leading-[30px] md:leading-[56px]">
+        <div className="text-center pt-3 md:text-left absolute left-1/2  top-0 transform -translate-x-1/2 md:translate-x-0 md:left-20 md:top-20 font-bold text-3xl md:text-4xl lg:text-5xl leading-[30px] md:leading-[56px]">
           Startup <br className="hidden md:block" />
           <span className="text-[#fc3d45]">Partnership</span>
         </div>

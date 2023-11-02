@@ -14,10 +14,10 @@ const VideoSection = () => (
     </div>
     <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-20"></div>
     <div className=" w-[90%] md:max-w-[600px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center z-20">
-      <h4 className="  font-bold text-white text-center sm:text-4xl md:text-5xl lg:text-6xl">
+      <h4 className="  font-bold text-white text-center text-5xl md:text-5xl lg:text-6xl">
         Meet our{" "}
       </h4>
-      <h4 className=" text-white text-center mb-3 font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+      <h4 className=" text-white text-center mb-3 font-bold  text-5xl md:text-5xl lg:text-6xl">
         digital pirates
       </h4>
       <p className="text-lg md:text-2xl text-white font-light">

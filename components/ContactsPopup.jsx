@@ -5,7 +5,7 @@ import React from "react";
 const ContactsPopup = ({ setIsPopupOpen }) => {
   return (
     <div
-      className="absolute top-7 right-20 w-[50%] "
+      className="absolute top-10 right-20 w-[50%] "
       onMouseLeave={() => console.log("leave")}
 
       // onMouseLeave={setIsPopupOpen(() => false)}

@@ -37,7 +37,7 @@ const DesktopLayout = ({ isIpad }) => {
   }
 
   return (
-    <div className="hidden sm:hidden md:flex lg:flex xl:flex justify-center md:scale-[0.7]  w-[90%]">
+    <div className="hidden sm:hidden md:hidden lg:flex xl:flex justify-center md:scale-[0.7] scale-x-50  w-[90%]">
       {/* 2  rows */}
       <div className="mt-10">
         {[
