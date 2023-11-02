@@ -18,10 +18,10 @@ const FooterNew = () => {
   return (
     <>
       <div className="w-full m-auto flex flex-col justify-center items-center mt-[50px]">
-        <div className="w-[90%] flex flex-wrap justify-center px-2 sm:px-5">
-          <div className="w-full lg:w-3/5 pl-2 sm:pl-5 lg:pr-0 lg:pt-[4.5rem] lg:pb-10">
+        <div className="w-[100%] flex flex-wrap justify-center px-2 sm:px-5">
+          <div className="w-full lg:w-3/5 lg:pr-0 lg:pt-[4.5rem] lg:pb-10">
             <p className="font-medium text-2xl sm:text-3xl  lg:text-5xl text-white">
-              Let's explore how we can create{" "}
+              Let's explore how we can create
               <span className="text-red-500">WOW</span> for you!
             </p>
 
@@ -53,7 +53,7 @@ const FooterNew = () => {
             </div>
           </div>
 
-          <div className="w-full lg:w-1/4 ml-0 sm:ml-[15%] pt-5 sm:pt-10 pb-5 sm:pb-10 lg:pt-20 lg:pb-16 ">
+          <div className="w-full lg:w-1/4 ml-0  pt-5 sm:pt-10 pb-5 sm:pb-10 lg:pt-20 lg:pb-16 ">
             <p className="text-white">Connect with us:</p>
             <div className="flex gap-2 mt-2 sm:mt-3">
               <Link

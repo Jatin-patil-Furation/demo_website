@@ -105,7 +105,7 @@ export default function Home() {
           <FooterNew />
         </footer>
 
-        <CookiePopup />
+        {/* <CookiePopup /> */}
       </div>
 
       <div className="">
