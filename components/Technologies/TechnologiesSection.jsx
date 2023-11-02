@@ -150,7 +150,7 @@ const TechnologiesSection = () => {
               );
             })}
           </Swiper>
-          <div className="absolute  right-48 bottom-[-1.3rem] z-10">
+          <div className="absolute right-10 bottom-[0.3rem] md:right-48 md:bottom-[-1.3rem] z-10">
             <div className="">
               <h1 className="text-[#EF3239] text-4xl font-extrabold">
                 FULLSTACK

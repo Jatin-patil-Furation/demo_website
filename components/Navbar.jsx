@@ -53,7 +53,7 @@ const Navbar = () => {
                 />
                 <label
                   htmlFor="hamburger"
-                  className="peer-checked:hamburger block relative z-20 p-6 -mr-6 cursor-pointer lg:hidden"
+                  className="peer-checked:hamburger block relative z-20 p-6 -mr-0  md:-mr-6 cursor-pointer lg:hidden"
                 >
                   <div
                     aria-hidden="true"
@@ -81,7 +81,7 @@ const Navbar = () => {
                             >
                               <Link
                                 href={navlink.link}
-                                className="group px-4 relative "
+                                className="group px-2.5 relative "
                               >
                                 <span className="relative text-white lg:text-[11px] xl:text-[15px] text-[20px] uppercase font-semibold ">
                                   {navlink.name}

@@ -22,11 +22,11 @@ const SolutionCard = ({ image, text }) => {
           data-aos-duration="4000"
           data-aos-delay="500"
           //   className="absolute align-middle self-center justify-self-center"
-          className="absolute top-10 left-10"
+          className="absolute top-[1.4rem] left-[1.1rem]  md:top-10 md:left-10"
           src={image}
           alt=""
         />
-        <p className="absolute bottom-8 left-10 text-2xl">{text}</p>
+        <p className="absolute bottom-[1.5rem] left-[1.1rem] text-xl md:bottom-8 md:left-10 md:text-2xl">{text}</p>
       </div>
     </>
   );
