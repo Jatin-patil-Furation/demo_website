@@ -53,15 +53,6 @@
 
 // export default WhatsAppButton;
 
-
-
-
-
-
-
-
-
-
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
@@ -101,6 +92,7 @@ const WhatsAppButton = () => {
         <button
           //   onClick={handleTelephoneClick}
           onMouseEnter={() => setIsPopupOpen(true)}
+          onMouseLeave={() => setIsPopupOpen(false)}
           className="border-0  w-full text-black "
         >
           <BsFillTelephoneFill size={15} />

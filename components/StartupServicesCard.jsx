@@ -18,7 +18,7 @@ const StartupServicesCard = ({ data }) => {
       scrollTrigger: {
         trigger: ref.current,
         start: "top center",
-        end: "bottom center",
+        end: "bottom+=50px center",
         markers: false,
         onEnter: () => {
           setIsActive(true);

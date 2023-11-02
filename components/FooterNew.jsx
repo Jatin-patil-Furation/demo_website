@@ -26,7 +26,7 @@ const FooterNew = () => {
             </p>
 
             <div className=" w-[50%] sm:w-[60%]">
-              <div className="flex mt-4 sm:mt-8 justify-between w-[80%]">
+              <div className="flex gap-3 mt-4 sm:mt-8 justify-between w-[80%]">
                 <Link
                   href="https://www.goodfirms.co/company/furation-tech-solutions"
                   target="_blank"
@@ -55,21 +55,21 @@ const FooterNew = () => {
 
           <div className="w-full lg:w-1/4 ml-0  pt-5 sm:pt-10 pb-5 sm:pb-10 lg:pt-20 lg:pb-16 ">
             <p className="text-white">Connect with us:</p>
-            <div className="flex gap-2 mt-2 sm:mt-3">
+            <div className="flex gap-4 mt-2 sm:mt-3">
               <Link
                 href={"https://www.facebook.com/furation.tech/"}
                 target="_blank"
               >
                 <Image
                   alt={logo?.[0]?.text}
-                  className="w-8 h-8 lg:w-5 lg:h-5"
+                  className="w-7 h-7 lg:w-5 lg:h-5"
                   src={logo?.[0]?.icon}
                 />
               </Link>
               <Link href={"https://twitter.com/furation"} target="_blank">
                 <Image
                   alt={logo?.[1]?.text}
-                  className="w-8 h-8 lg:w-5 lg:h-5"
+                  className="w-7 h-7 lg:w-5 lg:h-5"
                   src={logo?.[1]?.icon}
                 />
               </Link>
@@ -81,7 +81,7 @@ const FooterNew = () => {
               >
                 <Image
                   alt={logo?.[2]?.text}
-                  className="w-8 h-8 lg:w-5 lg:h-5"
+                  className="w-7 h-7 lg:w-5 lg:h-5"
                   src={logo?.[2]?.icon}
                 />
               </Link>
@@ -93,21 +93,21 @@ const FooterNew = () => {
               >
                 <Image
                   alt={logo?.[3]?.text}
-                  className="w-8 h-8 lg:w-5 lg:h-5"
+                  className="w-7 h-7 lg:w-5 lg:h-5"
                   src={logo?.[3]?.icon}
                 />
               </Link>
               <Link href={"https://dribbble.com/furation-tech"} target="_blank">
                 <Image
                   alt={logo?.[4]?.text}
-                  className="w-8 h-8 lg:w-5 lg:h-5"
+                  className="w-7 h-7 lg:w-5 lg:h-5"
                   src={logo?.[4]?.icon}
                 />
               </Link>
               <Link href={"https://www.behance.net/furation"} target="_blank">
                 <Image
                   alt={logo?.[5]?.text}
-                  className="w-8 h-8 lg:w-5 lg:h-5"
+                  className="w-7 h-7 lg:w-5 lg:h-5"
                   src={logo?.[5]?.icon}
                 />
               </Link>

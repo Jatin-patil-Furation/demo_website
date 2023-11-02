@@ -4,7 +4,7 @@ import { images } from "@/public/assets";
 
 const MobileLayout = () => {
   return (
-    <div className=" flex sm:hidden md:hidden lg:hidden xl:hidden justify-center scale-[0.65] w-[90%] h-full">
+    <div className=" flex sm:hidden md:hidden lg:hidden xl:hidden justify-center transform scale-x-[0.54] scale-y-[0.65] w-[90%] h-full">
       {/* 5  rows */}
       <div className="mt-10">
         <BrandCard image={images.akina} />
