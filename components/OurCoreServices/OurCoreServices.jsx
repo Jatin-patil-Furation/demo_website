@@ -137,10 +137,10 @@ const OurCoreServicesSection = () => {
   return (
     <div className="w-[90%] my-[5.25rem] relative">
       <div className="w-full mb-7">
-        <h4 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl md:mt-28 lg:mt-5 font-extrabold mb-4">
+        <h1 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl md:mt-28 lg:mt-5 font-bold mb-4">
           Our Core Services
-        </h4>
-        <p className="text-center opacity-80 mb-3 text-sm">
+        </h1>
+        <p className="text-center text-lg font-extralight opacity-80 mb-3">
           We believe in perfection by design and performance by default.
         </p>
       </div>
@@ -162,9 +162,9 @@ const OurCoreServicesSection = () => {
               <div
                 className={`${
                   cardState ? "themeColor" : "text-[gray]"
-                }  text-xl md:text-2xl lg:text-3xl font-bold text-[gray] text-left`}
+                }  text-2xl md:text-3xl lg:text-[2.8rem] font-bold text-[gray] text-left`}
               >
-                <p>End-to-End</p>
+                <p className="leading-[60px]">End-to-End</p>
                 <p>Product Engineering</p>
               </div>
             </div>
@@ -188,7 +188,7 @@ const OurCoreServicesSection = () => {
               <div
                 className={`${
                   !cardState ? "themeColor" : "text-[gray]"
-                }  text-xl md:text-2xl lg:text-3xl font-bold text-[gray] text-left`}
+                }  text-2xl md:text-3xl lg:text-[2.8rem] font-bold text-[gray] text-left`}
               >
                 <p>Digital Transformation</p>
               </div>

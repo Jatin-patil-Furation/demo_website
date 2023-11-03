@@ -13,7 +13,7 @@ const CookiePopup = () => {
   return (
     <>
       <div
-        className={`fixed ${
+        className={`fixed z-[99] ${
           isOpen
             ? "bottom-0 h-auto py-2 transition-all duration-1000 ease-in-out"
             : "-bottom-16 h-0"
@@ -55,8 +55,8 @@ const CookiePopup = () => {
               <IoMdCloseCircle />
             </button> */}
 
-        <div className="w-[90%] py-3 px-3 flex flex-col justify-between gap-3  md:flex-row">
-          <p className="text-white text-xs md:text-sm w-full md:w-1/2">
+        <div className="w-[90%] bg-black py-3 px-3 flex flex-col justify-between gap-3  md:flex-row">
+          <p className="text-white bg-black text-xs md:text-sm w-full md:w-1/2">
             This wensite uses cookies to enhance your digital experience. For
             additional details please visit&nbsp;
             <span className="themeColor underline cursor-pointer font-bold">

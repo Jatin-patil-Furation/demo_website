@@ -29,7 +29,7 @@ export default function Home() {
         </header>
 
         <main className="sm:mt-3 md:mt-4 lg:mt-5 xl:mt-6">
-          <section className="   flex justify-center" id="hero">
+          <section className=" min-h-[90vh]  flex justify-center" id="hero">
             <Hero />
           </section>
 
@@ -42,7 +42,7 @@ export default function Home() {
 
           <section
             id="techStack"
-            className="min-h-[90vh] flex justify-center items-center py-0 md:py-10 w-full text-white "
+            className="min-h-[100vh] flex justify-center items-center py-0 md:py-10 w-full text-white "
           >
             <TechnologiesSection />
           </section>

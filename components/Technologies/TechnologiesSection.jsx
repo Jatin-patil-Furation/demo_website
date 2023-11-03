@@ -97,10 +97,10 @@ const TechnologiesSection = () => {
     <>
       <div className="w-full flex justify-center relative">
         <div className="w-[90%] mx-auto">
-          <h4 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl ">
+          <h4 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl mt-3 mb-4">
             Technologies
           </h4>
-          <p className="capitalize text-sm mb-10">
+          <p className="capitalize text-lg font-extralight mb-10">
             End to End Service Capabilities
           </p>
 
@@ -150,7 +150,7 @@ const TechnologiesSection = () => {
               );
             })}
           </Swiper>
-          <div className="absolute right-10 bottom-[0.3rem] md:right-48 md:bottom-[-1.3rem] z-10">
+          <div className="absolute right-10 bottom-[0.3rem] md:right-48 md:bottom-[-1.3rem] z-[9]">
             <div className="">
               <h1 className="text-[#EF3239] text-4xl font-extrabold">
                 FULLSTACK

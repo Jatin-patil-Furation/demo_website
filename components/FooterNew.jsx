@@ -22,7 +22,7 @@ const FooterNew = () => {
           <div className="w-full lg:w-3/5 lg:pr-0 lg:pt-[4.5rem] lg:pb-10">
             <p className="font-medium text-2xl sm:text-3xl  lg:text-5xl text-white">
               Let's explore how we can create
-              <span className="text-red-500">WOW</span> for you!
+              <span className="text-red-500"> WOW</span> for you!
             </p>
 
             <div className=" w-[50%] sm:w-[60%]">
@@ -114,7 +114,7 @@ const FooterNew = () => {
             </div>
             <div className="mt-5 sm:mt-10 ">
               <p className="flex text-white font-semibold text-2xl sm:text-3xl mt-10 sm:mt-5 tracking-wide">
-                furation.tech
+                <Link href={`/`}>furation.tech</Link>
               </p>
               <p className="text-white font-[900] text-sm sm:text-base">
                 Made With Love, from India ❤️

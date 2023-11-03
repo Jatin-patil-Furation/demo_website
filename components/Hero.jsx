@@ -21,7 +21,7 @@ const Hero = () => {
 
   return (
     <div className="w-[90%] md:w-[100%] flex flex-wrap h-full ">
-      <div className="text-white w-full md:w-1/2  md:pl-[70px] md:pr-[40px] flex justify-center flex-col gap-8 text-base md:text-lg lg:text-xl">
+      <div className="text-white w-full md:w-1/2  md:pl-[70px] md:pr-[40px] flex justify-center flex-col gap-8 text-xl md:text-2xl lg:text-3xl">
         <p className="text-gray-500 ">AI Assisted ...</p>
 
         <p className="">
@@ -33,7 +33,7 @@ const Hero = () => {
           We help organizations & <br /> startups to build {/* <br/>  */}
           {/* <span className="themeColor font-semibold" ref={textRef}></span> */}
           <span
-            className="  font-semibold typewrite text-lg md:text-xl lg:text-2xl text-red-500"
+            className="  font-bold typewrite text-lg md:text-xl lg:text-3xl text-red-500"
             data-period="2000"
             data-type='[ "Outstanding", "Data Driven", "Secure", "Scalable", "Engaging", "Beautiful" ]'
           ></span>

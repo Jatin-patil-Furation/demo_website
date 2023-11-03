@@ -177,7 +177,6 @@ const Page = () => {
                 // src="https://lollypop.design/wp-content/uploads/2023/06/branding.webp"
                 alt="Image 1"
                 className="w-full h-auto"
-                
               />
             </div>
             <div className="pl-3  lg:pl-8">
@@ -373,7 +372,7 @@ const Page = () => {
               </div>
               <div>
                 <button className="bg-red-500 w-full text-white font-bold py-2 px-4 rounded">
-                See Open Positions
+                  See Open Positions
                 </button>
               </div>
             </div>
@@ -383,8 +382,9 @@ const Page = () => {
       <div className="w-full flex justify-center py-10">
         <ContactUsSection />
       </div>
-      <FooterNew />
-
+      <div className="bg-[#2D2D2D] flex justify-center">
+        <FooterNew />
+      </div>
     </div>
   );
 };
