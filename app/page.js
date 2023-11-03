@@ -93,10 +93,7 @@ export default function Home() {
             <CareersSection />
           </section>
 
-          <section
-            id="contactSection"
-            className="w-full flex justify-center py-10"
-          >
+          <section className="w-full flex justify-center py-10">
             <ContactUsSection />
           </section>
         </main>

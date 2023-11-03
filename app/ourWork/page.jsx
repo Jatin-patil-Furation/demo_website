@@ -205,7 +205,7 @@ const Page = () => {
             />
           </div>
           <div className="absolute w-[52%] text-base left-1/2 top-5 space-y-5">
-            <p>
+            <p className="font-extralight leading-[20.16px]">
               At Furation, we understand that every entrepreneur experiences
               that 'Eureka' moment. Much like Archimedes' legendary run through
               the streets, these innovators have their sleepless nights and
@@ -213,10 +213,11 @@ const Page = () => {
               <br />
               <br className="hidden lg:block" /> However, the true journey for
               entrepreneurs begins after this Eureka moment. <br />
+              <br />
               We're here to support startups in navigating that journey and
               turning their visionary concepts into reality.
             </p>
-            <p className="font-semibold">
+            <p className="font-bold">
               This is where Furation's Startup Lab comes in.
             </p>
           </div>
@@ -224,7 +225,7 @@ const Page = () => {
 
         <div className="lg:hidden">
           <div className="text-base space-y-5">
-            <p className="">
+            <p className="font-extralight leading-[20.16px]">
               At Furation, we understand that every entrepreneur experiences
               that 'Eureka' moment. Much like Archimedes' legendary run through
               the streets, these innovators have their sleepless nights and
@@ -232,6 +233,7 @@ const Page = () => {
               <br />
               <br /> However, the true journey for entrepreneurs begins after
               this Eureka moment. <br />
+              <br />
               We're here to support startups in navigating that journey and
               turning their visionary concepts into reality.
             </p>
