@@ -48,10 +48,10 @@ const OurDnaSections = () => {
       <div className="w-full">
         <div className=" flex flex-col items-center justify-center">
           <div className="sm:p-6 lg:mb-[30px] flex flex-col justify-center items-center">
-            <h4 className="font-bold text-center  text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4">
+            <h1 className="font-bold text-center  text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4">
               Our DNA
-            </h4>
-            <p className="capitalize text-center text-md mb-10 text-sm w-[90%]">
+            </h1>
+            <p className="capitalize text-center mb-10 w-[90%] text-lg font-extralight">
               We at Furation believe in ”T.R.U.S.T.” and doing whatever is
               needed to build Digital Products that create WOW!
             </p>

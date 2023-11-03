@@ -44,7 +44,7 @@ const ContactUsSection = () => {
       className="w-[90%] text-white py-10 flex flex-wrap  "
     >
       <div className="w-full lg:w-3/5 ">
-        <h4 className="text-center  lg:text-left  md:4xl  mb-3 lg:leading-[3.8rem] font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+        <h4 className="text-center  lg:text-left  md:4xl  mb-7 lg:leading-[3.8rem] font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
           Contact Us <br />
           <span className="themeColor">for project discussion</span>
         </h4>

@@ -23,6 +23,7 @@ body {
   height: 100vh;
   background-color: black;
   scroll-behavior: smooth;
+  scroll-margin-top: 80px;
 }
 
 .themeColor {
