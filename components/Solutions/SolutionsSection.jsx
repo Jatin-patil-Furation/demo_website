@@ -5,7 +5,7 @@ const SolutionsSection = () => {
   return (
     <div className="w-full flex justify-center">
       <div className="w-[90%] flex flex-wrap relative">
-        <div className="w-full lg:w-[28%] lg:sticky top-32 self-start ">
+        <div className="w-full lg:w-1/3 lg:sticky top-32 self-start ">
           <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-3">
             Solutions
           </h1>
@@ -28,7 +28,7 @@ const SolutionsSection = () => {
           </p> */}
         </div>
 
-        <div className=" flex justify-center w-full lg:w-[70%]">
+        <div className=" flex justify-center w-full lg:w-2/3 lg:gap-2">
           <SolutionsLayout />
         </div>
       </div>
