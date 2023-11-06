@@ -82,6 +82,7 @@ import dribbble from "./dribbble-icon.svg";
 import behance from "./behance-icon.svg";
 // import video1 from "./mov_bbb.mp4";
 import redArrow from "./redarrow.svg";
+import goldBarkBadge from "./goldBarkBadge.png";
 
 const images = {
   footerBg: footerBg,
@@ -95,18 +96,18 @@ const images = {
   image: image,
   batch: batch,
   play: play,
-  meeting:meeting,
-  week:week,
-  hund:hund,
-  hundPlus:hundPlus,
-  hunk:hunk,
-  infinity:infinity,
-  sunday:sunday,
-  openposition:openposition,
-  games:games,
-  club:club,
-  work:work,
-  sundaymobile:sundaymobile,
+  meeting: meeting,
+  week: week,
+  hund: hund,
+  hundPlus: hundPlus,
+  hunk: hunk,
+  infinity: infinity,
+  sunday: sunday,
+  openposition: openposition,
+  games: games,
+  club: club,
+  work: work,
+  sundaymobile: sundaymobile,
   logo: union1,
   dribbble: dribbble,
   behance: behance,
@@ -165,7 +166,7 @@ const images = {
   trp: trp,
   wwi: wwi,
   redArrow,
-
+  goldBarkBadge,
   // union: union,
 };
 

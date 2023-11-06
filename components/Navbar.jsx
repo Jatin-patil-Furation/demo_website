@@ -93,7 +93,7 @@ const Navbar = () => {
                             >
                               <Link
                                 href={navlink.link}
-                                className="navlinks group px-2.5 relative "
+                                className="navlinks group px-2.5 relative text-center"
                               >
                                 <span className="peer-checked:hamburger relative text-white lg:text-[11px] xl:text-[15px] text-[20px] uppercase font-semibold ">
                                   {navlink.name}

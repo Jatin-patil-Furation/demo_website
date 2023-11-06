@@ -7,7 +7,12 @@ const CookiePopup = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    setIsOpen(true);
+    const cookie = JSON.parse(localStorage.getItem("cookie"));
+    if (cookie?.accepted) {
+      setIsOpen(false);
+    } else {
+      setIsOpen(true);
+    }
   }, []);
 
   return (
@@ -81,7 +86,13 @@ const CookiePopup = () => {
             </button>
             <button
               className="w-full md:w-auto themeBg md:font-semibold text-white text-xs md:text-sm lg:text-sm p-2 md:p-2 rounded-sm"
-              onClick={() => setIsOpen(() => false)}
+              onClick={() => {
+                setIsOpen(() => false);
+                localStorage.setItem(
+                  "cookie",
+                  JSON.stringify({ accepted: true })
+                );
+              }}
             >
               Accept All Cookies
             </button>
