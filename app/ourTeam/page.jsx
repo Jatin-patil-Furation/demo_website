@@ -21,6 +21,7 @@ import Slider from "react-slick";
 import "swiper/css/navigation";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Link from "next/link";
 
 const Page = () => {
   const settings = {
@@ -371,9 +372,14 @@ const Page = () => {
                 </p>
               </div>
               <div>
-                <button className="bg-red-500 w-full text-white font-bold py-2 px-4 rounded">
-                  See Open Positions
-                </button>
+                <Link
+                  target="_blank"
+                  href={`https://wellfound.com/company/furation/jobs`}
+                >
+                  <button className="bg-red-500 w-full text-white font-bold py-2 px-4 rounded">
+                    See Open Positions
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

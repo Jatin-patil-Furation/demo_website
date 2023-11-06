@@ -25,8 +25,8 @@ const FooterNew = () => {
               <span className="text-red-500"> WOW</span> for you!
             </p>
 
-            <div className=" w-[50%] sm:w-[60%]">
-              <div className="flex gap-3 mt-4 sm:mt-8 justify-between w-[80%]">
+            <div className=" w-[60%]">
+              <div className="flex gap-4 mt-4 sm:mt-8 justify-between items-center w-[80%]">
                 <Link
                   href="https://www.goodfirms.co/company/furation-tech-solutions"
                   target="_blank"
@@ -46,6 +46,18 @@ const FooterNew = () => {
                 >
                   {" "}
                   <Image src={images.batch} width={80} />
+                </Link>
+
+                <Link
+                  target="_blank"
+                  href="https://www.bark.com/en/in/company/furation-tech-solutions-pvt-ltd/9wbbJ/"
+                >
+                  <Image
+                    src={images.goldBarkBadge}
+                    height={100}
+                    width={100}
+                    alt="gold bark"
+                  />
                 </Link>
                 {/* todo: check bark */}
                 {/* <BarkWidget /> */}
@@ -116,7 +128,7 @@ const FooterNew = () => {
               <p className="flex text-white font-semibold text-2xl sm:text-3xl mt-10 sm:mt-5 tracking-wide">
                 <Link href={`/`}>furation.tech</Link>
               </p>
-              <p className="text-white font-[900] text-sm sm:text-base">
+              <p className="text-white font-semibold text-sm sm:text-base">
                 Made With Love, from India ❤️
               </p>
             </div>

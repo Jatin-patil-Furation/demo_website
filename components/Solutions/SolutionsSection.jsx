@@ -5,7 +5,7 @@ const SolutionsSection = () => {
   return (
     <div className="w-full flex justify-center">
       <div className="w-[90%] flex flex-wrap relative">
-        <div className="w-full lg:w-[27%] lg:sticky top-32 self-start ">
+        <div className="w-full lg:w-[28%] lg:sticky top-32 self-start ">
           <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-3">
             Solutions
           </h1>
@@ -13,7 +13,7 @@ const SolutionsSection = () => {
             Cutting edge Technology Integration
           </p>
 
-          <p className="text-base lg:text-lg mb-3 text-left">
+          <p className="text-base  hyphens-auto whitespace-normal lg:text-lg mb-3 text-left">
             Technology's ongoing evolution unlocks unprecedented possibilities
             for every business. To capitalize on these opportunities, we've
             cultivated expertise in cutting-edge technologies, both within our

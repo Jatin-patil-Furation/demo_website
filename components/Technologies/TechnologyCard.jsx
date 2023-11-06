@@ -12,7 +12,7 @@ const TechnologyCard = ({ heading, technologies }) => {
           {technologies.map((item, index) => {
             return (
               <div key={index} className="flex gap-4 items-center">
-                {React.createElement(item.icon, { size: 35, color: "white" })}
+                {React.createElement(item.icon, { size: 29, color: "white" })}
                 {/* <Image src={item.icon} height={30} width={30} alt="image" /> */}
                 <p className="w-full border-b py-3 text-xl ">{item.tech}</p>
               </div>

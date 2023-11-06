@@ -196,7 +196,7 @@ const OurCoreServicesSection = () => {
           </button>
         </div>
         <div className="relative w-full md:w-[49%]">
-          <div className="relative flex flex-col gap-4 w-full  h-[90vh] overflow-y-scroll scrollbar-none ">
+          <div className="relative flex flex-col gap-4 w-full  h-auto  ">
             {cardState ? (
               <div
                 ref={ref1}
