@@ -100,7 +100,7 @@ const ContactUsSection = () => {
       </div>
       <div className="flex">
         <div className="mt-10">
-          <p className="text-xs md:text-xl text-gray-300 mt-2">
+          <p className="text-sm md:text-lg font-medium text-gray-300 mt-2">
             Rich Experienced Team | Time Zone Aligned
           </p>
         </div>

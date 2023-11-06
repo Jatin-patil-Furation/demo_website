@@ -14,7 +14,7 @@ const SolutionCard = ({ image, text }) => {
 
   return (
     <>
-      <div className="h-[160px] w-[160px] md:h-[200px] md:w-[200px] bg-black border    gradient_border grid grid-cols-2 relative mr-2 mb-2 p-0  overflow-hidden">
+      <div className="h-[160px] w-[160px] md:h-[180px] md:w-[180px] lg:h-[200px] lg:w-[200px] bg-black border    gradient_border grid grid-cols-2 relative mr-2 mb-2 p-0  overflow-hidden">
         <Image
           height={60}
           width={60}
@@ -26,7 +26,9 @@ const SolutionCard = ({ image, text }) => {
           src={image}
           alt=""
         />
-        <p className="absolute bottom-[1.5rem] left-[1.1rem] text-xl md:bottom-8 md:left-10 md:text-2xl">{text}</p>
+        <p className="absolute bottom-[1.5rem] left-[1.1rem] text-xl md:bottom-8 md:left-10 md:text-2xl">
+          {text}
+        </p>
       </div>
     </>
   );

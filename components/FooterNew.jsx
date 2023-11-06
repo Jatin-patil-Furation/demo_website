@@ -66,7 +66,7 @@ const FooterNew = () => {
           </div>
 
           <div className="w-full lg:w-1/4 ml-0  pt-5 sm:pt-10 pb-5 sm:pb-10 lg:pt-20 lg:pb-16 ">
-            <p className="text-white">Connect with us:</p>
+            <p className="text-white font-medium">Connect with us:</p>
             <div className="flex gap-4 mt-2 sm:mt-3">
               <Link
                 href={"https://www.facebook.com/furation.tech/"}
@@ -128,7 +128,7 @@ const FooterNew = () => {
               <p className="flex text-white font-semibold text-2xl sm:text-3xl mt-10 sm:mt-5 tracking-wide">
                 <Link href={`/`}>furation.tech</Link>
               </p>
-              <p className="text-white font-semibold text-sm sm:text-base">
+              <p className="text-white font-medium text-base">
                 Made With Love, from India ❤️
               </p>
             </div>

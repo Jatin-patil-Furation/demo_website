@@ -18,7 +18,7 @@ const BrandCard = ({ image, bg, isActive }) => {
           backgroundColor: isActive ? "#EF3239" : "#212121a6",
           transition: "1.5s ease", // Specify the transition property and duration
         }}
-        className={` h-[180px] w-[180px]  rounded-[20px] grid grid-cols-2 relative  mr-2 mb-2 p-0  overflow-hidden`}
+        className={` h-[140px] w-[140px] md:h-[180px] md:w-[180px] rounded-[20px] grid grid-cols-2 relative  mr-2 mb-2 p-0  overflow-hidden`}
       >
         <div
           data-aos="fade-up"

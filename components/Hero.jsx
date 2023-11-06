@@ -36,8 +36,7 @@ const Hero = () => {
             className="  font-bold typewrite text-lg md:text-xl lg:text-3xl text-red-500"
             data-period="2000"
             data-type='[ "Outstanding", "Data Driven", "Secure", "Scalable", "Engaging", "Beautiful" ]'
-          ></span>
-          <br />
+          ></span>{" "}
           Digital Products / Platforms.
         </p>
       </div>
